@@ -28,7 +28,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
-@ComponentScans(value = { @ComponentScan("com.giftCard.da"), @ComponentScan("com.giftCard.service") })
+@ComponentScans(value = { @ComponentScan("com.billTracker"), @ComponentScan("com.billTracker") })
 public class AppConfig {
 
 	@Autowired
@@ -58,7 +58,7 @@ public class AppConfig {
 		props.put(C3P0_MAX_STATEMENTS, env.getProperty("hibernate.c3p0.max_statements"));
 
 		factoryBean.setHibernateProperties(props);
-		factoryBean.setPackagesToScan("com.giftCard.model");
+		factoryBean.setPackagesToScan("com.billTracker");
 		return factoryBean;
 	}
 
