@@ -21,15 +21,10 @@ package com.billTracker.dao;
 		}
 
 		@Override
-		public void saveVisitorModel(long id) {
+		public void saveVisitorModel(VisitorModel visitorNew) {
 			// TODO Auto-generated method stub
-			sessionFactory.getCurrentSession().save(id);
-		}
-
-		@Override
-		public Object saveVisitorModel(VisitorModel visitorNew) {
-			// TODO Auto-generated method stub
-			return sessionFactory.getCurrentSession().save(visitorNew);
+			 sessionFactory.getCurrentSession().save(visitorNew);
+		
 		}
 
 	

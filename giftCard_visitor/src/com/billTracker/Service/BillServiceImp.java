@@ -1,3 +1,4 @@
+
 package com.billTracker.Service;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import com.billTracker.dao.BillRepository;
 import com.billTracker.model.BillModel;
 
 @Service
+
 @Transactional
 public class BillServiceImp implements BillService {
 
@@ -25,14 +27,10 @@ public class BillServiceImp implements BillService {
 
 	@Override
 	public List<BillModel> listAll() {
-		// TODO Auto-generated method stub
-		return billDao.getAllBillModel();
-	}
+		// TODO Auto-generated method
+		System.out.println("------------" + billDao.getAllBillModel().size());
 
-	@Override
-	public void save(BillModel billNew) {
-		// TODO Auto-generated method stub
-		billDao.saveBillModel(billNew);
+		return billDao.getAllBillModel();
 
 	}
 

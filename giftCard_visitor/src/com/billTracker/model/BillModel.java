@@ -1,3 +1,4 @@
+
 package com.billTracker.model;
 
 import java.util.Date;
@@ -8,13 +9,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
 
 @Table(name = "bill_info")
 public class BillModel {
 
 	@Id
+
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String id;
 
@@ -127,7 +128,5 @@ public class BillModel {
 				+ ", dateOfEntry=" + dateOfEntry + ", dueDate=" + dueDate + ", paid=" + paid + ", unpaid=" + unpaid
 				+ "]";
 	}
-	
-	
 
 }

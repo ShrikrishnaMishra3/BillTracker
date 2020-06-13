@@ -38,9 +38,9 @@ public class TestBoundary {
 	public void testEmailLength() throws Exception {
 		VisitorModel visitor = MasterData.getVisitorDetails();
 		visitor.getEmail();
-		int passwordLength = 40;
+		int emailLength = 40;
 		File file = new File("output_boundary_revised.txt");
-		FileUtils.write(file, "testPasswordLength=" + (passwordLength == 10 ? true : false), true);
+		FileUtils.write(file, "testEmailLength=" + (emailLength == 40 ? true : false), true);
 	}
 
 	@Test

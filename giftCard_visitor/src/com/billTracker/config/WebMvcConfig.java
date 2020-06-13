@@ -1,4 +1,4 @@
-package com.giftCard.visitor.config;
+package com.billTracker.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

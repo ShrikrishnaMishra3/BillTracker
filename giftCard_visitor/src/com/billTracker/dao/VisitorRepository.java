@@ -8,9 +8,6 @@ public interface VisitorRepository {
 
 	public List<VisitorModel> getAllVisitorModels();
 
-	public void saveVisitorModel(long id);
-
-	public Object saveVisitorModel(VisitorModel visitorNew);
-
+	public void saveVisitorModel(VisitorModel visitorNew);
 
 }

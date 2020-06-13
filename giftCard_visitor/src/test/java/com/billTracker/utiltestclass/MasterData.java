@@ -13,14 +13,14 @@ public class MasterData {
 	public static VisitorModel getVisitorDetails() {
 		VisitorModel visitor = new VisitorModel();
 		visitor.setId(1);
-		visitor.setName("Besta");
-		visitor.setEmail("shashi.2346@gmail.com");
+		visitor.setName("krishna");
+		visitor.setEmail("krishna@iiht.com");
 		visitor.setActive(true);
 		return visitor;
 	}
 
 	public static Properties getProperties() throws IOException {
-		FileReader reader = new FileReader("src/main/resources/db.properties");
+		FileReader reader = new FileReader("src/db.properties");
 		Properties properties = new Properties();
 		properties.load(reader);
 		return properties;

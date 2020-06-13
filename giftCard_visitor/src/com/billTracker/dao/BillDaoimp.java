@@ -21,9 +21,4 @@ public class BillDaoimp implements BillRepository {
 		return sessionFactory.getCurrentSession().createQuery("from Bill").getResultList();
 	}
 
-	@Override
-	public void saveBillModel(BillModel billNew) {
-		sessionFactory.getCurrentSession().save(billNew);
-		
-	}
 }

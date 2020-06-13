@@ -1,4 +1,4 @@
-package com.giftCard.visitor.config;
+package com.billTracker.config;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -15,6 +15,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
 		
 		AnnotationConfigWebApplicationContext appContext =new AnnotationConfigWebApplicationContext();
 		appContext.register(WebMvcConfig.class);
+		// appContext.register(AppCon);
 		
 		ServletRegistration.Dynamic dispatcher =servletContext.addServlet("SpringDispatcher", new DispatcherServlet(appContext));
 		
